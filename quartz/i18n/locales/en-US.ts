@@ -1,4 +1,4 @@
-import { Translation } from "./definition"
+import { Translation } from "./definition";
 
 export default {
   propertyDefaults: {
@@ -33,7 +33,7 @@ export default {
       title: "Explorer",
     },
     footer: {
-      createdWith: "Created with",
+      createdWith: "",
     },
     graph: {
       title: "Graph View",
@@ -70,7 +70,9 @@ export default {
     folderContent: {
       folder: "Folder",
       itemsUnderFolder: ({ count }) =>
-        count === 1 ? "1 item under this folder." : `${count} items under this folder.`,
+        count === 1
+          ? "1 item under this folder."
+          : `${count} items under this folder.`,
     },
     tagContent: {
       tag: "Tag",
@@ -81,4 +83,4 @@ export default {
       totalTags: ({ count }) => `Found ${count} total tags.`,
     },
   },
-} as const satisfies Translation
+} as const satisfies Translation;
